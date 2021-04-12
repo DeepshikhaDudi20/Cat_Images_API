@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="title" content="Cat Images With Multiple Category">
+      <meta name="description" content="Cat Images With Multiple Category">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="css/cat-images.css">
+   </head>
+   <body>
+      <form class="cat-list" name="catList">
+         <h1 class='heading'>
+            Cat Images With Multiple Category
+         </h1>
+         <div class="select-category">
+            <label for="category" class="label-category">Select Category:</label>
+            <select name="categoryList" class="category-list" id="categoryList" onchange="selectCategory(this)">
+            </select>
+         </div>
+         <table id="catImages">
+            <tbody></tbody>
+         </table>
+         <button type="button" class="load-more-images" onclick="loadMoreCatImages()">
+         More Cat Images
+         </button>
+      </form>
+      <script type="text/javascript" src="js/cat-images.js"></script>
+   </body>
+</html>
